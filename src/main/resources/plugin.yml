@@ -1,0 +1,12 @@
+name: LorePortal-EnchantPlugin
+version: '${project.version}'
+main: com.xst.loreportalenchantplugin.LorePortalEnchantPlugin
+api-version: 1.19
+load: STARTUP
+authors: [ _XSTU_ ]
+
+commands:
+  gui:
+    description: Opens a GUI
+  enc:
+    description: Gives you a special Crafting Table
