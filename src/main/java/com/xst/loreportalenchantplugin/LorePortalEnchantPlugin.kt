@@ -1,7 +1,8 @@
 package com.xst.loreportalenchantplugin
 
-import com.xst.loreportalenchantplugin.commands.OpenGuiCommand
 import com.xst.loreportalenchantplugin.commands.enchantment_bench_give_command
+import com.xst.loreportalenchantplugin.listeners.Enchantment_Bench_Listeners.`EnchantMent-Bench_Place`
+import com.xst.loreportalenchantplugin.listeners.Enchantment_Bench_Listeners.`EnchantMent-Bench_Open`
 import com.xst.loreportalenchantplugin.listeners.inventory_close_listener
 import com.xst.loreportalenchantplugin.listeners.InventoryClickEvent
 import org.bukkit.inventory.Inventory
@@ -25,13 +26,14 @@ class LorePortalEnchantPlugin : JavaPlugin() {
     }
 
     private fun registerCommands(){
-        getCommand("gui")!!.setExecutor(OpenGuiCommand())
         getCommand("enc")!!.setExecutor(enchantment_bench_give_command())
         logger.info("Registering commands")
     }
     private fun registerlisteners(){
         server.pluginManager.registerEvents(inventory_close_listener(),this)
         server.pluginManager.registerEvents(InventoryClickEvent(),this)
+        server.pluginManager.registerEvents(`EnchantMent-Bench_Place`(),this)
+        server.pluginManager.registerEvents(`EnchantMent-Bench_Open`(),this)
         logger.info("Registerd Listeners!")
     }
 

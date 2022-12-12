@@ -31,8 +31,7 @@ class InventoryClickEvent : Listener {
 
                 Material.BARRIER -> {
                     event.isCancelled = true
-                    //player.closeInventory()
-                    player.sendMessage("HOLLAAAAA")
+                    player.closeInventory()
                 }
 
                 else -> {/*event.isCancelled = true*/}
