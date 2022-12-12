@@ -8,3 +8,5 @@ authors: [ _XSTU_ ]
 commands:
   enc:
     description: Gives you a special Crafting Table
+  telepathy:
+    description: Gives you a CustomEnchant Pick

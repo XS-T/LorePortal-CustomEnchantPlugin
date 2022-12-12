@@ -22,14 +22,14 @@ class `ItemStacks-Enchantment-Bench` {
     fun ItemStacks_3(): ItemStack{
         val LP_Blank = ItemStack(Material.PURPLE_STAINED_GLASS_PANE)
         val LP_Blank_Meta = LP_Blank.itemMeta
-        LP_Blank_Meta?.setDisplayName("")
+        LP_Blank_Meta?.setDisplayName("${ChatColor.BLACK}|")
         LP_Blank.setItemMeta(LP_Blank_Meta)
         return LP_Blank
     }
     fun ItemStacks_4(): ItemStack{
         val LP_Blank = ItemStack(Material.BLACK_STAINED_GLASS_PANE)
         val LP_Blank_Meta = LP_Blank.itemMeta
-        LP_Blank_Meta?.setDisplayName("")
+        LP_Blank_Meta?.setDisplayName("${ChatColor.BLACK}|")
         LP_Blank.setItemMeta(LP_Blank_Meta)
         return LP_Blank
     }
