@@ -47,12 +47,12 @@ class `EnchantMent-Bench_Open` : Listener {
                     inventory.setItem(7,It().ItemStacks_4())
                     inventory.setItem(8,It().ItemStacks_3())
                     inventory.setItem(9,It().ItemStacks_4())
-                    inventory.setItem(17,It().ItemStacks_3())
-                    inventory.setItem(18,It().ItemStacks_4())
+                    inventory.setItem(17,It().ItemStacks_4())
+                    inventory.setItem(18,It().ItemStacks_3())
                     inventory.setItem(26,It().ItemStacks_3())
                     inventory.setItem(27,It().ItemStacks_4())
-                    inventory.setItem(35,It().ItemStacks_3())
-                    inventory.setItem(36,It().ItemStacks_4())
+                    inventory.setItem(35,It().ItemStacks_4())
+                    inventory.setItem(36,It().ItemStacks_3())
                     inventory.setItem(44,It().ItemStacks_3())
                     inventory.setItem(45,It().ItemStacks_4())
                     inventory.setItem(46,It().ItemStacks_3())
@@ -62,12 +62,9 @@ class `EnchantMent-Bench_Open` : Listener {
                     inventory.setItem(50,It().ItemStacks_3())
                     inventory.setItem(51,It().ItemStacks_4())
                     inventory.setItem(52,It().ItemStacks_3())
-
-
-
-
+                    //Close Button
                     inventory.setItem(53,It().ItemStacks_2())
-                    LorePortalEnchantPlugin.guiMap[player.uniqueId] = inventory
+                    LorePortalEnchantPlugin.guiMap[player.uniqueId] = inventory //Adds you to a Map
                     player.openInventory(inventory)
                 }else{
                     event.isCancelled = true

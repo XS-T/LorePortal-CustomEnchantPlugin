@@ -36,12 +36,7 @@ class InventoryClickEvent : Listener {
 
                 else -> {/*event.isCancelled = true*/}
             }
-            if(event.view.title == "${ChatColor.DARK_GRAY}Inventory"){
-                if(event.clickedInventory == LorePortalEnchantPlugin.guiMap[playerUUID]){
-                    event.isCancelled = true
-                }
-
-            }
+           event.isCancelled = true
         }
     }
 }
